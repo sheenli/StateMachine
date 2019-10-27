@@ -152,7 +152,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: YKFramework.StateMachine.StateUityEvent, Assembly-CSharp, Version=0.0.0.0,
+    m_TypeName: YKFramework.StateMachine.StackStateUityEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   _OnLeave:
     m_PersistentCalls:
@@ -168,8 +168,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: YKFramework.StateMachine.StateUityEvent, Assembly-CSharp, Version=0.0.0.0,
+    m_TypeName: YKFramework.StateMachine.StackStateUityEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1 &191953506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2070248803326822471, guid: a7405fa270834e945936b107b66bc67e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1947590180}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &191953507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191953506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ad785db7d724724b62a132db311c528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defUI: {fileID: 32902997}
+  mBorder: {fileID: 1842358774}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -276,41 +296,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 866328728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2739bf19c00049a0bfa24c5653abc0a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 755d87c805c9451cb08ee3e8cd329c9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _OnEnter:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 866328728}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-    m_TypeName: YKFramework.StateMachine.StateUityEvent, Assembly-CSharp, Version=0.0.0.0,
+      m_Calls: []
+    m_TypeName: YKFramework.StateMachine.StackStateUityEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   _OnLeave:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 866328728}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: YKFramework.StateMachine.StateUityEvent, Assembly-CSharp, Version=0.0.0.0,
+      m_Calls: []
+    m_TypeName: YKFramework.StateMachine.StackStateUityEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  canvasGroup: {fileID: 866328733}
+--- !u!225 &866328733 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 2070248803529744573, guid: a7405fa270834e945936b107b66bc67e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1947590180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +431,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: YKFramework.StateMachine.StateUityEvent, Assembly-CSharp, Version=0.0.0.0,
+    m_TypeName: YKFramework.StateMachine.StackStateUityEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   _OnLeave:
     m_PersistentCalls:
@@ -442,8 +447,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: YKFramework.StateMachine.StateUityEvent, Assembly-CSharp, Version=0.0.0.0,
+    m_TypeName: YKFramework.StateMachine.StackStateUityEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!224 &1842358774 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 2070248802874471236, guid: a7405fa270834e945936b107b66bc67e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1947590180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1882442492
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +532,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248802411152533, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248803529744570, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248803343748925, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2070248803326822474, guid: a7405fa270834e945936b107b66bc67e,
         type: 3}
@@ -627,30 +653,121 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2070248802411152533, guid: a7405fa270834e945936b107b66bc67e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2070248803089691252, guid: a7405fa270834e945936b107b66bc67e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070248803343748925, guid: a7405fa270834e945936b107b66bc67e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2070248803529744570, guid: a7405fa270834e945936b107b66bc67e,
         type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2070248802411152539, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191953507}
+    - target: {fileID: 2070248802411152539, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchWind
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248802411152539, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: YKFramework.StateMachine.Example.BaseUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248802411152539, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 866328729}
+    - target: {fileID: 2070248801683096247, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191953507}
+    - target: {fileID: 2070248801683096247, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchWind
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248801683096247, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: YKFramework.StateMachine.Example.BaseUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248801683096247, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1075639548}
+    - target: {fileID: 2070248802463891020, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191953507}
+    - target: {fileID: 2070248802463891020, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseCurrentWind
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248802680522676, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191953507}
+    - target: {fileID: 2070248802680522676, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseCurrentWind
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248802680522676, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248802680522676, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248802680522676, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248802776675012, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191953507}
+    - target: {fileID: 2070248802776675012, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseCurrentWind
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248803088068310, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 191953507}
+    - target: {fileID: 2070248803088068310, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SwitchWind
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248803088068310, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: YKFramework.StateMachine.Example.BaseUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2070248803088068310, guid: a7405fa270834e945936b107b66bc67e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 1981784258}
     m_RemovedComponents:
     - {fileID: 2070248803326822470, guid: a7405fa270834e945936b107b66bc67e, type: 3}
     - {fileID: 2070248802411152532, guid: a7405fa270834e945936b107b66bc67e, type: 3}
     - {fileID: 2070248803529744569, guid: a7405fa270834e945936b107b66bc67e, type: 3}
+    - {fileID: 2070248803343749059, guid: a7405fa270834e945936b107b66bc67e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: a7405fa270834e945936b107b66bc67e, type: 3}
 --- !u!1 &1981784257 stripped
 GameObject:
@@ -684,7 +801,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-    m_TypeName: YKFramework.StateMachine.StateUityEvent, Assembly-CSharp, Version=0.0.0.0,
+    m_TypeName: YKFramework.StateMachine.StackStateUityEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   _OnLeave:
     m_PersistentCalls:
@@ -700,5 +817,5 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_TypeName: YKFramework.StateMachine.StateUityEvent, Assembly-CSharp, Version=0.0.0.0,
+    m_TypeName: YKFramework.StateMachine.StackStateUityEvent, Assembly-CSharp, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null

@@ -15,13 +15,13 @@ namespace YKFramework.StateMachine
         }
         
         [SerializeField]
-        protected StateUityEvent _OnEnter;
+        protected StackStateUityEvent _OnEnter;
         
-        public event UnityAction<IState,object,object> OnEentEvent
+        public event UnityAction<IState,ChangeStateType,object> OnEentEvent
         {
             add
             {
-                if(_OnEnter == null) _OnEnter = new StateUityEvent();
+                if(_OnEnter == null) _OnEnter = new StackStateUityEvent();
                 _OnEnter.AddListener(value);
             }
             remove
@@ -29,21 +29,15 @@ namespace YKFramework.StateMachine
                 if(_OnEnter != null) _OnEnter.RemoveListener(value);
             }
         }
-
-        public virtual void OnEnter(IState prevState, object param1 = null, object param2 = null)
-        {
-            if(_OnEnter != null) _OnEnter.Invoke(prevState as IStackState, param1,param2);
-        }
-
         
         [SerializeField]
-        protected StateUityEvent _OnLeave;
+        protected StackStateUityEvent _OnLeave;
         
-        public event UnityAction<IState,object,object> OnLeaveEvent
+        public event UnityAction<IState,ChangeStateType,object> OnLeaveEvent
         {
             add
             {
-                if(_OnLeave == null) _OnLeave = new StateUityEvent();
+                if(_OnLeave == null) _OnLeave = new StackStateUityEvent();
                 _OnLeave.AddListener(value);
             }
             remove
@@ -52,10 +46,26 @@ namespace YKFramework.StateMachine
             }
         }
 
-        public virtual void OnLeave(IState nextState, object param1 = null, object param2 = null)
+        public void OnEnter(IState prevState, object param1 = null, object param2 = null)
         {
-            if(_OnLeave != null) _OnLeave.Invoke(nextState as IStackState, param1,param2);
+            var changeType = (ChangeStateType) param1;
+            if(_OnEnter != null) _OnEnter.Invoke(prevState as IStackState,changeType,param2);
+            OnEnter(prevState,changeType,param2);
         }
+
+        
+      
+
+        public void OnLeave(IState nextState, object param1 = null, object param2 = null)
+        {
+            var changeType = (ChangeStateType) param1;
+            if(_OnLeave != null) _OnLeave.Invoke(nextState as IStackState,changeType,param2);
+            OnLeave(nextState,changeType,param2);
+        }
+        
+        
+        protected abstract void OnEnter(IState prevState, ChangeStateType type, object param1 = null);
+        protected abstract void OnLeave(IState prevState, ChangeStateType type, object param1 = null);
 
         public virtual void OnUpdate(){}
 
