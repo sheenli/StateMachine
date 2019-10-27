@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Administrator\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Administrator\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_StateMachine.200727937.00" t="ExcludeRecursive" />
+    <e p="H:\github\StateMachine" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="StateMachine" t="Include">
+          <e p="Script" t="Include">
+            <e p="BaseStateMachine" t="Include">
+              <e p="IState.cs" t="Include" />
+              <e p="StateMachine.cs" t="Include" />
+            </e>
+            <e p="Example" t="Include">
+              <e p="BaseUI.cs" t="Include" />
+              <e p="UIMgr.cs" t="Include" />
+            </e>
+            <e p="StackStateMachine" t="Include">
+              <e p="BaseStackState.cs" t="Include" />
+              <e p="BaseStackStateComponent.cs" t="Include" />
+              <e p="StackMachine.cs" t="Include" />
+              <e p="StackMachineComponeent.cs" t="Include" />
+            </e>
+            <e p="StateComponent" t="Include">
+              <e p="BaseComponentState.cs" t="Include" />
+              <e p="StateUityEvent.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="StateMachine.sln" t="IncludeFlat" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
